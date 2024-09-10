@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {    
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100vw; 
+    height:100vh; 
+    background: linear-gradient(90deg, #9258da,#ad92c8,#f2f2f3);                                               
+}
+
+.container{      
+    min-width:70%;
+    min-height:60%;
+    background-color: #f2f2f3;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.4);
+}
+.container-slider{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap:20px;    
+    min-width: 70%;
+    min-height:60%;
+    padding:20px;
+}
+.memes {
+    border: 1px dotted black;
+    min-width: 100%;
+    min-height:35vh;
+}
+.control{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    min-width:100%;
+}
+
