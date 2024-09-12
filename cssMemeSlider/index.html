@@ -7,26 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="container">
-    <div class="slider ">        
-            <img class="moved" src="./img/meme1.png" alt="meme">
-            <img class="moved" src="./img/meme2.jpg" alt="meme">
-            <img class="moved" src="./img/meme3.jpeg" alt="meme">
-            <img class="moved" src="./img/meme4.jpg" alt="meme">
+   <div class="container">    
+        <input type="radio"  id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <input type="radio" id="btn-4" name="toggle">    
+    <div class="slider">        
+            <img src="./img/meme1.png" alt="meme1">
+           <img  src="./img/meme2.jpg" alt="meme2">
+            <img  src="./img/meme3.jpeg" alt="meme3">
+            <img  src="./img/meme4.jpg" alt="meme4">
     </div>
+    
     <div class="container-bottom">
         <div class="words">
-            <p>Цитата1</p>
-            <!--<p>Цитата2</p>
-            <p>Цитата3</p>
-            <p>Цитата4</p>-->
+            <p id="word1">Ох уж эти ошибки...</p>
+            <p id="word2">Хочется в отпуск</p>
+            <p id="word3">О мем!</p>
+            <p id="word4">Только позитив</p>
         </div>
         <div class="control">
-            <input type="radio"  id="btn-1" name="toggle" checked><label for="btn-1"></label>
-            <input type="radio" id="btn-2" name="toggle"><label for="btn-2"></label>
-            <input type="radio" id="btn-3" name="toggle"><label for="btn-3"></label>
-            <input type="radio" id="btn-4" name="toggle"><label for="btn-4"></label>
-        </div>        
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+            <label for="btn-4"></label>
+        </div>       
     </div>
    </div>      
     <script src="app.js"></script>
