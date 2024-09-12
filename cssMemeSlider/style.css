@@ -1,43 +1,87 @@
-* {
+*{
     padding: 0;
     margin: 0;
 }
 
-body {    
-    display: flex;
+body{
+    display:flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center; 
-    width: 100vw; 
-    height:100vh; 
-    background: linear-gradient(90deg, #9258da,#ad92c8,#f2f2f3);                                               
+    flex-direction: column;
+    width: 100vw;
+    height:100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 7%, rgba(0,212,255,1) 100%);
+}
+.container {   
+    display:flex;    
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    width:50%;    
+    height: 60%;
+    padding: 20px;
+    
+    background-color: aliceblue;
+    border-radius: 10px;
+    
+}
+.slider {   
+    display: flex; 
+    justify-content: left;       
+    width:90%;
+    height:80%;    
+    background-color: aqua;
+    overflow: hidden;
+    border-radius: 10px;         
+}
+ 
+.slider img {
+    object-fit: cover;
+    width: auto;   
+    height:100%;
+    transition: transform 0.8s linear; 
 }
 
-.container{      
-    min-width:70%;
-    min-height:60%;
-    background-color: #f2f2f3;
-    border-radius: 20px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.4);
+
+.container-bottom{
+    width:80%;
+    max-width:100%;   
+    margin-top:30px; 
+    display: flex;
+    justify-content: space-between;    
 }
-.container-slider{
-    display: flex;    
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    gap:20px;    
-    min-width: 70%;
-    min-height:60%;
-    padding:20px;
+.control input[type="radio"] {
+    display:none;
 }
-.memes {
-    border: 1px dotted black;
-    min-width: 100%;
-    min-height:35vh;
+label {
+    display:inline-block;
+    width:10px;
+    height: 10px;
+    margin: 3px;
+    border-radius: 50%;
+    background-color:aqua;
+    border: 1px solid black;
+    cursor:pointer;
 }
-.control{
-    display:flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    min-width:100%;
+
+#btn-1:checked ~ label[for="btn-1"],
+#btn-2:checked ~ label[for="btn-2"],
+#btn-3:checked ~ label[for="btn-3"],
+#btn-4:checked ~ label[for="btn-4"] {
+    background-color:blue;
+}
+
+#btn-1:checked ~ .slider img {
+    transform:translateX(0)
+}
+#btn-2:checked ~ .slider img {
+    transform:translate(-100%);
+}
+#btn-3:checked ~ .slider img {
+    transform:translate(-200%);
+}
+#btn-4:checked ~ .slider img {
+    transform:translate(-300%);
 }
 
