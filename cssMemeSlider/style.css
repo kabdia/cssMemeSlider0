@@ -101,7 +101,7 @@ label:active {
     display: inline-block;      
     
 }
-
+/*Анимация */
 @keyframes opacity {
     from {
         opacity:0;
