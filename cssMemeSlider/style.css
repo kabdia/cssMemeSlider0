@@ -45,8 +45,7 @@ body{
     height:100%;   
 }
 .container-bottom{
-    min-width:100%;     
-     
+    min-width:100%;    
     display: flex;    
     justify-content:space-between;  
 }
@@ -57,11 +56,18 @@ body{
 input[type="radio"] {
     display:none;
 }
+span {
+    display:inline-block;
+    width:1.7em;
+    height:1.7em;    
+    margin-top:-0.6em;
+    margin-left: -0.6em;
+}
 label {
     display:inline-block;
-    width:0.5em;
-    height: 0.5em;
-    margin: 0.1em;
+    width:0.6em;
+    height: 0.6em;
+    margin: 0.2em;
     border-radius: 50%;
     background-color:rgb(104, 104, 232);
     border: 0.1em solid rgb(104, 104, 232);    
@@ -106,6 +112,10 @@ label:active {
 }
 
 @media (max-width:500px){
+    .container {
+        width:70%;    
+        height: 50%;
+    }
     .container-bottom{            
         margin-top:3%;        
         flex-direction: column-reverse;
